@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/event"
+        android:icon="@drawable/ic_event_black_24dp"
+        android:title="Event" />
+
+    <item
+        android:icon="@drawable/background_image"
+        android:title="background"
+        android:id="@+id/background" />
+</menu>
