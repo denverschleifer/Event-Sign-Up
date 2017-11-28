@@ -27,5 +27,7 @@
     <string name="enter_event_hint">Enter Event Info Here</string>
     <string name="empty_event_message">The event text was empty, please enter text</string>
     <string name="event_view_default_text">This text is a long sentence or two that will be replaced when the program runs so we will never actually see it. It is simply here to show us what our UI will look like with text.</string>
+    <string name="delete">DELETE</string>
+    <string name="add_new_event">Add New Event</string>
 
 </resources>
