@@ -22,7 +22,7 @@
         <activity
             android:name=".UsersListActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Event"
+        <activity android:name=".EventActivity"
             android:screenOrientation="portrait" />
     </application>
 

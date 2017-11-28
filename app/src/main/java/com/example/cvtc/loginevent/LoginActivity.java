@@ -81,9 +81,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intentRegister);
                 break;
 
-
         }
     }
+
 
     private void verifyFromSQLite() {
         if (!inputValidation.isInputEditTextFilled(textInputEditTextEmail, textInputLayoutEmail, getString(R.string.error_message_email))) {
@@ -98,7 +98,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         if(databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim(),
                 textInputEditTextPassword.getText().toString().trim())) {
-            Intent eventsIntent = new Intent(activity, Event.class);
+            Intent eventsIntent = new Intent(activity, EventActivity.class);
             startActivity(eventsIntent);
 
         }  else {
