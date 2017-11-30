@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -64,10 +65,13 @@ public class EventActivity extends AppCompatActivity {
     public void logout(View view){
         SharedPreferences sharedPreferences = getSharedPreferences(EventActivity.PREFS_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+
         editor.clear();
         editor.commit();
         moveTaskToBack(true);
         EventActivity.this.finish();
+        Intent intent = new Intent(EventActivity.this,LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override
