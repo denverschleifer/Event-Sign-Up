@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -92,18 +91,9 @@ public class EventActivity extends AppCompatActivity {
                 return true;
 
         }
-//        if (item.getItemId() == R.id.logout_btn){
-//            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-//            SharedPreferences.Editor editor = settings.edit();
-//            editor.remove("logged");
-//            editor.commit();
-//            finish();
-//        }
+
         return super.onOptionsItemSelected(item);
     }
-
-
-
 
     public void deleteEvent(View view){
         View parent = (View)view.getParent();
@@ -112,7 +102,5 @@ public class EventActivity extends AppCompatActivity {
         eventDBHelper.deleteEvent(event);
         loadEventList();
     }
-
-
 
 }
