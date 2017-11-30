@@ -30,6 +30,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private InputValidation inputValidation;
     private DatabaseHelper databaseHelper;
 
+//    private AppCompatButton logoutButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         appCompatButtonLogin = findViewById(R.id.appCompatButtonLogin);
 
         textViewLinkRegister = findViewById(R.id.textViewLinkRegister);
+
+//        logoutButton = findViewById(R.id.logout_btn);
 
     }
 
@@ -80,7 +84,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Intent intentRegister = new Intent(getApplicationContext(), RegisterActivity.class);
                 startActivity(intentRegister);
                 break;
-
+//            case R.id.logout_btn:
+//                Intent intentHome = new Intent(getApplicationContext(), LoginActivity.class);
+//                startActivity(intentHome);
+//                break;
         }
     }
 
