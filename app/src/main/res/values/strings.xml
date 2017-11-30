@@ -30,5 +30,9 @@
     <string name="add_new_event">Add New Event</string>
     <string name="logout">Logout</string>
     <string name="meme_maker">Meme Maker</string>
+    <string name="preview">Preview</string>
+    <string name="load">LOAD</string>
+    <string name="save">SAVE</string>
+    <string name="share">SHARE</string>
 
 </resources>
