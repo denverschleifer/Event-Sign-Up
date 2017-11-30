@@ -8,5 +8,11 @@
         android:title="@string/add_new_event"
         app:showAsAction="always"/>
 
+    <item
+        android:id="@+id/meme"
+        android:icon="@android:drawable/ic_menu_crop"
+        android:title="@string/meme_maker"
+        app:showAsAction="always"/>
+
 
 </menu>

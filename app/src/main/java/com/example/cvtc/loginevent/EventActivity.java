@@ -2,6 +2,7 @@ package com.example.cvtc.loginevent;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +41,7 @@ public class EventActivity extends AppCompatActivity {
         loadEventList();
 
     }
+
 
     private void loadEventList() {
         ArrayList<String> eventList = eventDBHelper.getEventList();
@@ -90,6 +92,11 @@ public class EventActivity extends AppCompatActivity {
                 dialog.show();
                 return true;
 
+        } switch (item.getItemId()){
+            case R.id.meme:
+                Intent intent = new Intent(this, MemeActivity.class);
+                this.startActivity(intent);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

@@ -29,5 +29,6 @@
     <string name="delete">DELETE</string>
     <string name="add_new_event">Add New Event</string>
     <string name="logout">Logout</string>
+    <string name="meme_maker">Meme Maker</string>
 
 </resources>
