@@ -71,6 +71,19 @@ public class EventActivity extends AppCompatActivity {
         moveTaskToBack(true);
         EventActivity.this.finish();
         Intent intent = new Intent(EventActivity.this,LoginActivity.class);
+        startActivity(intent );
+    }
+
+    @Override
+    public void onBackPressed() {
+        SharedPreferences sharedPreferences = getSharedPreferences(EventActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.clear();
+        editor.commit();
+        moveTaskToBack(true);
+        EventActivity.this.finish();
+        Intent intent = new Intent(EventActivity.this, LoginActivity.class);
         startActivity(intent);
     }
 
