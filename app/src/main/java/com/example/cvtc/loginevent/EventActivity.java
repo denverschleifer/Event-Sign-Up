@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -71,7 +73,10 @@ public class EventActivity extends AppCompatActivity {
         moveTaskToBack(true);
         EventActivity.this.finish();
         Intent intent = new Intent(EventActivity.this,LoginActivity.class);
-        startActivity(intent );
+        Toast toast = Toast.makeText(getApplicationContext(),"You have been logged out!", Toast.LENGTH_SHORT);
+        toast.setMargin(0,0);
+        toast.show();
+        startActivity(intent);
     }
 
     @Override
