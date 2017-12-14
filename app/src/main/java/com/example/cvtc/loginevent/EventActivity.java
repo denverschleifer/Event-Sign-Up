@@ -89,6 +89,9 @@ public class EventActivity extends AppCompatActivity {
         moveTaskToBack(true);
         EventActivity.this.finish();
         Intent intent = new Intent(EventActivity.this, LoginActivity.class);
+        Toast toast = Toast.makeText(getApplicationContext(),"You have been logged out!", Toast.LENGTH_SHORT);
+        toast.setMargin(0,0);
+        toast.show();
         startActivity(intent);
     }
 
